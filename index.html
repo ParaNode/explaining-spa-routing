@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <nav class="flex items-center justify-center gap-8 py-4 text-white bg-blue-800">
+      <a navLink href="/">Home</a>
+      <a navLink href="/about">About</a>
+      <a navLink href="/contact">Contact</a>
+    </nav>
+    <div id="routerOutlet"></div>
+
+    <template navPage="/">
+      this is home page template
+    </template>
+    <template navPage="/about">
+      this is about page template
+    </template>
+    <template navPage="/contact">
+      this is contact us page template
+    </template>
+
+    
+    <template notFound>
+      <h1 class="text-xl font-bold">OOPS</h1>
+      this page is not found
+    </template>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
